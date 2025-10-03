@@ -44,8 +44,8 @@ body{
 .avatar-bottom-container{
     font-size: 40px;   
     margin: 0px 30px 10px 20px;
-    height: 5.2rem;
-    width: 5.2rem;
+    height: 5rem;
+    width: 5rem;
     
     display: flex;
     align-items: center;
@@ -55,14 +55,33 @@ body{
     background-color: rgb(255, 208, 0);
 }
 .avatar-bottom-container > #avatar-bottom{
-    height: 4.9rem;
-    width: 4.9rem;
+    height: 4.7rem;
+    width: 4.7rem;
 }
 
 .morgan-greet-p,
 .morgan-greet-head{
     margin: 8px 0px;
     font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    margin-left: 11rem;
+}
+
+button{
+    width: 100px;
+    background-color: #1992D4;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 700;
+
+    padding: 9px 20px;
+    margin: 0px 5px;
+
+    border: 1px solid #1992D4;
 }
 
 

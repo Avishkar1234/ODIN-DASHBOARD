@@ -22,11 +22,50 @@ body{
     background-color: whitesmoke;
 
     grid-column: 2 / 3;
-    display: flex; 
-    align-items: start; 
 
     padding: 4px;
 }
+
+.top-header{
+    display: flex;
+    align-items: start; 
+}
+
+.bottom-header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.morgon{
+    display: flex;
+}
+
+.avatar-bottom-container{
+    font-size: 40px;   
+    margin: 0px 30px 10px 20px;
+    height: 5.2rem;
+    width: 5.2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color: rgb(255, 208, 0);
+}
+.avatar-bottom-container > #avatar-bottom{
+    height: 4.9rem;
+    width: 4.9rem;
+}
+
+.morgan-greet-p,
+.morgan-greet-head{
+    margin: 8px 0px;
+    font-weight: 700;
+}
+
+
 
 .search-section{
     margin: 20px 10px;
@@ -73,9 +112,6 @@ body{
     font-size: 1.5rem;
 }
 
-.mdi-magnify{
-    font-size: 199px;
-}
 
 #search{
     font-size: 1.6rem;

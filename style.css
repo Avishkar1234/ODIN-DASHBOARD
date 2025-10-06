@@ -16,7 +16,7 @@ body{
     display: grid;
 
     grid-template-columns: 250px 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 1fr;
 }
 
 .header{
@@ -188,6 +188,13 @@ button{
 
 .main{
     grid-column: 2 / 3;
+    display: grid;
+
+    grid-template-columns: 2fr 360px;
+    gap: 24px;
+    padding: 24px;
+    align-items: start;
+    background: transparent;
 }
 
 span{
@@ -208,11 +215,14 @@ span{
     grid-template-columns: 2fr 1fr;
 }
 
+.left-column { background: transparent; }
+
 .left-cards{
     display: grid;
     gap: 16px;
 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: stretch;
 }
 
 .right-cards{
@@ -253,6 +263,61 @@ span{
 }
 
 .cards{
-    gap: 16px;
+    position: relative;
+    background: #fff;
     border-radius: 12px;
+    padding: 20px 20px 18px 36px;    
+    box-shadow: 0 6px 18px rgba(22,36,50,0.06);
+    min-height: 140px;              
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cards h2 {
+    margin: 0 0 8px; 
+    font-size: 1.05rem; 
+   
+}
+.cards p  {
+    margin: 0;
+    color: #666; 
+    line-height: 1.35; 
+}
+
+.cards .yellow {
+  position: absolute;
+  left: 12px; 
+  top: 12px; 
+  bottom: 12px;
+  width: 10px;
+  background: rgb(226,205,18);
+  border-radius: 8px;
+}
+
+.right-column { 
+    background: transparent; 
+}
+
+.right-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.anncouncement-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(22,36,50,0.06);
+}
+
+.trending-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(22,36,50,0.04);
 }
